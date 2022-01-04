@@ -17,7 +17,7 @@ const addTodo = (event) => {
   event.preventDefault();
   let value = input.value;
   if (!value) {
-    alert("field blank! Enter a todo");
+    alert("field blank! Enter a task");
   } else {
     todos.unshift({ value });
     todos.forEach((o, i) => (o.id = i + 1));
