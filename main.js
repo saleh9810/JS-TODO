@@ -1,6 +1,8 @@
 const input = document.getElementById("input");
 
-let todos = JSON.parse(window.localStorage.getItem("todos"));
+localStorage.setItem("todos", JSON.stringify([]));
+
+let todos = JSON.parse(window.localStorage.getItem("todos"))
 
 // input logic
 const addTodo = (event) => {
@@ -51,7 +53,6 @@ const changeStatus = (id) => {
   let item = todos.find((item) => item.id == id);
   item.completed = !item.completed;
   localStorage.setItem("todos", JSON.stringify(todos));
-  console.log(item);
   showTodo();
 };
 
