@@ -1,11 +1,19 @@
 const input = document.getElementById("input");
 
-localStorage.setItem("todos", JSON.stringify([]));
+
+
+if(!window.localStorage.getItem("todos")) {
+  localStorage.setItem("todos", JSON.stringify([]));
+
+}
 
 let todos = JSON.parse(window.localStorage.getItem("todos"))
 
+
+
 // input logic
 const addTodo = (event) => {
+ 
   event.preventDefault();
   let value = input.value;
   if (!value) {
