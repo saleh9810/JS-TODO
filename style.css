@@ -109,7 +109,7 @@ li span {
 
     li {
         width: 90%;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .remove {
@@ -118,7 +118,14 @@ li span {
     }
 
     .checkbox {
-        width: 22px;  
+        width: 20px;  
   }
+
+}
+
+@media only screen and (max-width: 394px) {
+    li {
+        font-size: 17px;
+    }
 
 }
