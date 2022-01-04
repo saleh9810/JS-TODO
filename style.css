@@ -1,0 +1,87 @@
+.unCompleted {
+    text-decoration: line-through;
+    color: gainsboro;
+}
+
+.todo {
+    text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+
+
+
+
+
+h1 {
+    font-size: 45px;
+}
+
+input {
+    width: 50%;
+    height: 40px;
+    position: relative;
+    left: 4px;
+    border-radius: 10px 0px 0px 10px;
+
+
+}
+
+.add {
+    height: 46px;
+    border: none;
+    background-color: rgb(25, 167, 172);
+    color: white;
+    width: 50px;
+    border-radius: 0 10px 10px 0;
+    font-weight: bold;
+
+}
+li {
+    font-size: 40px;
+    width: 70%;
+    margin: auto;
+    background-color: rgb(25, 167, 172);
+    border-radius: 10px;
+    margin-top: 40px;
+    list-style: none;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+}
+li span {
+    word-break: break-all;
+}
+
+li button {
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(25, 167, 172);
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.remove {
+    font-size: 35px;
+    margin-left: 10px;
+}
+.remove:hover {
+    color: rgb(206, 4, 4);
+}
+
+.checkbox {
+    width: 28px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.dot {
+    font-size: 24px;
+}
