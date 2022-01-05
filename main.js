@@ -28,7 +28,14 @@ const addTodo = (event) => {
 // show Todo
 
 const showTodo = () => {
-  const ul = document.getElementById("ul");
+  const ul = document.getElementById("list");
+  const clearBtn = document.getElementById("clear")
+  if(todos.length === 0) {
+    clearBtn.classList.add('hide')
+  }else {
+    clearBtn.classList.remove('hide')
+
+  }
 
   ul.innerHTML = " ";
   todos.map((item) => {
@@ -61,6 +68,7 @@ const changeStatus = (id) => {
   showTodo();
 };
 
+// clear Todos
 const clearTodos = () => {
   if(confirm("Are you sure you want to clear all the list")) {
     localStorage.setItem("todos", JSON.stringify([]));

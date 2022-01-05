@@ -10,6 +10,11 @@
     color: gainsboro;
 }
 
+.hide {
+    overflow: hidden;
+    display: none;
+}
+
 
 
 .flex {
@@ -30,8 +35,14 @@
 
 
 h1 {
-    font-size: 45px;
-    margin-top: 10px;
+    font-size: 50px;
+    padding: 15px 0px;
+    background-color: rgb(25, 167, 172);
+    border-radius: 0px 0px 25px 25px;
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    margin-bottom: 50px;
 }
 
 input {
@@ -102,13 +113,12 @@ li span {
 }
 .clear {
     position: relative;
-    text-align: right;
-    right: 23%;
+    left: 15%;
 }
 .clear button {
     margin-top: 20px;
     padding: 10px;
-    background-color: rgb(150, 0, 0);
+    background-color: rgb(32, 14, 14);
     border: none;
     color: #fff;
     border-radius: 7px;
@@ -142,18 +152,21 @@ li span {
   }
 
   .clear {
-    right: 6%;
+    left: 6%;
 }
 
 }
 
 @media only screen and (max-width: 494px) {
+    h1 {
+        width: 100%;
+    }
     li {
         font-size: 17px;
     }
     .clear {
        
-        right: 2%;
+        left: 2%;
     }
 
 }

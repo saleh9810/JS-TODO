@@ -13,16 +13,17 @@
     <div class="todo">
         <h1 class="center">Todo List</h1>
         <div class="todoBox">
+            <div class="clear">
+                <button id="clear"  onclick="clearTodos()" >Clear</button>
+                </div>
             <form  class="center" onsubmit="addTodo(event)">
                 <input type="text"  id="input"> 
                 <button class="add" >Add</button>
             </form>
-            <div class="clear">
-            <button  onclick="clearTodos()" >Clear</button>
-            </div>
-            <ul id="ul">
+           
+            <ul id="list">
             </ul>
-
+           
         </div>
    </div>
 
