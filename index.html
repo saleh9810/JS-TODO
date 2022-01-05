@@ -11,14 +11,18 @@
 
 
     <div class="todo">
-        <h1>Todo List</h1>
+        <h1 class="center">Todo List</h1>
         <div class="todoBox">
-            <form onsubmit="addTodo(event)">
+            <form  class="center" onsubmit="addTodo(event)">
                 <input type="text"  id="input"> 
                 <button class="add" >Add</button>
             </form>
+            <div class="clear">
+            <button  onclick="clearTodos()" >Clear</button>
+            </div>
             <ul id="ul">
             </ul>
+
         </div>
    </div>
 

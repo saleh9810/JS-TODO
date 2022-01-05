@@ -10,15 +10,20 @@
     color: gainsboro;
 }
 
-.todo {
-    text-align: center;
-}
+
 
 .flex {
   display: flex;
   align-items: center;
 }
 
+.center {
+    text-align: center;
+}
+
+.rigth {
+    text-align: right;
+}
 
 
 
@@ -95,6 +100,21 @@ li span {
 .dot {
     font-size: 24px;
 }
+.clear {
+    position: relative;
+    text-align: right;
+    right: 23%;
+}
+.clear button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(150, 0, 0);
+    border: none;
+    color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+    
+}
 
 
 @media only screen and (max-width: 794px) {
@@ -121,11 +141,19 @@ li span {
         width: 20px;  
   }
 
+  .clear {
+    right: 6%;
 }
 
-@media only screen and (max-width: 394px) {
+}
+
+@media only screen and (max-width: 494px) {
     li {
         font-size: 17px;
+    }
+    .clear {
+       
+        right: 2%;
     }
 
 }

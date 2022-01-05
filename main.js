@@ -1,14 +1,11 @@
 const input = document.getElementById("input");
 
-
-
 if(!window.localStorage.getItem("todos")) {
   localStorage.setItem("todos", JSON.stringify([]));
 
 }
 
 let todos = JSON.parse(window.localStorage.getItem("todos"))
-
 
 
 // input logic
@@ -63,5 +60,13 @@ const changeStatus = (id) => {
   localStorage.setItem("todos", JSON.stringify(todos));
   showTodo();
 };
+
+const clearTodos = () => {
+  if(confirm("Are you sure you want to clear all the list")) {
+    localStorage.setItem("todos", JSON.stringify([]));
+    todos = []
+    showTodo();
+  }
+}
 
 showTodo();
