@@ -50,6 +50,8 @@ const showTodo = () => {
           </div>`;
     ul.append(li);
   });
+
+
 };
 
 // delete todo
@@ -76,5 +78,7 @@ const clearTodos = () => {
     showTodo();
   }
 }
+
+
 
 showTodo();

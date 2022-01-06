@@ -17,6 +17,8 @@
 
 
 
+
+
 .flex {
   display: flex;
   align-items: center;
@@ -29,6 +31,8 @@
 .rigth {
     text-align: right;
 }
+
+
 
 
 
@@ -73,7 +77,8 @@ li {
     margin: auto;
     background-color: rgb(25, 167, 172);
     border-radius: 10px;
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     list-style: none;
     color: #fff;
     display: flex;
@@ -112,8 +117,7 @@ li span {
     font-size: 24px;
 }
 .clear {
-    position: relative;
-    left: 15%;
+    margin-left: 15%;
 }
 .clear button {
     margin-top: 20px;
@@ -152,7 +156,7 @@ li span {
   }
 
   .clear {
-    left: 6%;
+    margin-left: 5%;
 }
 
 }
@@ -166,7 +170,7 @@ li span {
     }
     .clear {
        
-        left: 2%;
+        margin-left: 1%;
     }
 
 }
